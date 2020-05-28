@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import FlatList from './flatlist';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -10,7 +12,8 @@ class App extends Component {
   }
 
   render() {
-    return (<h1>Test</h1>);
+    return (
+      <FlatList flats={this.props.flats} />);
   }
 }
 
