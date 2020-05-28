@@ -7,13 +7,13 @@ class App extends Component {
     super(props);
 
     this.state = {
-      selectedFlat: null
+      selectedFlatLat: 48.884211
     };
   }
 
   render() {
     return (
-      <FlatList flats={this.props.flats} />);
+      <FlatList flats={this.props.flats} selected />);
   }
 }
 
