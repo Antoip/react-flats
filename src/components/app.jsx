@@ -7,13 +7,22 @@ class App extends Component {
     super(props);
 
     this.state = {
-      selectedFlatLat: 48.884211
+      selectedFlat: this.props.flats[0]
     };
+  }
+
+  selectFlat = (index) => {
+    this.setState({selectedFlat: this.props.flats[index]});
   }
 
   render() {
     return (
-      <FlatList flats={this.props.flats} selected />);
+      <FlatList
+        flats={this.props.flats}
+        selectedFlat={this.state.selectedFlat}
+        selectFlat={this.selectFlat}
+      />
+      );
   }
 }
 
