@@ -34,7 +34,6 @@ class App extends Component {
         />
         <div className="map-container">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyCgylbiZKrnByydYJQMMzXnuAJsrlH5-t8' }}
             defaultCenter={this.center()}
             defaultZoom={12}
           >
